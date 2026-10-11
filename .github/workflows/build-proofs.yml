@@ -11,6 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # The container user differs from the runner user; let it write here.
+      - name: Make workspace writable
+        run: chmod -R a+rwX .
+
       - name: Check proofs and build coqdoc
         uses: coq-community/docker-coq-action@v1
         with:
