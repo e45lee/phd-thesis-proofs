@@ -1,0 +1,40 @@
+name: Build proofs
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check proofs and build coqdoc
+        uses: coq-community/docker-coq-action@v1
+        with:
+          # Same Rocq version as the local build (see README).
+          custom_image: rocq/rocq-prover:9.1.1
+          custom_script: |
+            startGroup "Rocq version"
+              rocq --version
+            endGroup
+            startGroup "Check proofs"
+              make -j"$(nproc)"
+            endGroup
+            startGroup "Build coqdoc"
+              make html
+            endGroup
+
+      # docker-coq-action runs as a different user; make the outputs
+      # readable for the upload step.
+      - name: Revert permissions
+        if: always()
+        run: sudo chown -R "$(id -u):$(id -g)" .
+
+      - name: Upload coqdoc
+        uses: actions/upload-artifact@v4
+        with:
+          name: coqdoc-${{ github.sha }}
+          path: html/

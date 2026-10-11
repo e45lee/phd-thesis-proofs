@@ -1,0 +1,96 @@
+-R Metalib Metalib
+-R Common Common
+-R Fq Fq
+-R Fm Fm
+-R Fb Fb
+-R FbArb FbArb
+-R Fbe Fbe
+-R FbeArb FbeArb
+-R FqExt FqExt
+-R Fac Fac
+-R Fa Fa
+-R Lm Lm
+-R Fam Fam
+
+Metalib/AssocList.v
+Metalib/CoqEqDec.v
+Metalib/CoqFSetDecide.v
+Metalib/CoqFSetInterface.v
+Metalib/CoqListFacts.v
+Metalib/CoqUniquenessTac.v
+Metalib/CoqUniquenessTacEx.v
+Metalib/FSetExtra.v
+Metalib/FSetWeakNotin.v
+Metalib/LibDefaultSimp.v
+Metalib/LibLNgen.v
+Metalib/LibTactics.v
+Metalib/MetatheoryAtom.v
+Metalib/Metatheory.v
+
+Common/Label.v
+Common/LabelMap.v
+Common/Tactics.v
+Common/Signatures.v
+Common/Lattice.v
+
+Fq/Fsub_LetSum_Definitions.v
+Fq/Fsub_LetSum_Infrastructure.v
+Fq/Fsub_LetSum_Lemmas.v
+Fq/Fsub_LetSum_Soundness.v
+
+Fm/Fsub_LetSum_Definitions.v
+Fm/Fsub_LetSum_Infrastructure.v
+Fm/Fsub_LetSum_Lemmas.v
+Fm/Fsub_LetSum_Soundness.v
+Fm/Fsub_LetSum_Immutability.v
+
+Fb/Fsub_LetSum_Definitions.v
+Fb/Fsub_LetSum_Infrastructure.v
+Fb/Fsub_LetSum_Lemmas.v
+Fb/Fsub_LetSum_Soundness.v
+
+FbArb/Fsub_LetSum_Definitions.v
+FbArb/Fsub_LetSum_Infrastructure.v
+FbArb/Fsub_LetSum_Lemmas.v
+FbArb/Fsub_LetSum_Soundness.v
+FbArb/BooleanAlgebra_Properties.v
+
+Fbe/Fsub_LetSum_Definitions.v
+Fbe/Fsub_LetSum_Infrastructure.v
+Fbe/Fsub_LetSum_Lemmas.v
+Fbe/Fsub_LetSum_Soundness.v
+
+FbeArb/Fsub_LetSum_Definitions.v
+FbeArb/Fsub_LetSum_Infrastructure.v
+FbeArb/Fsub_LetSum_Lemmas.v
+FbeArb/Fsub_LetSum_Soundness.v
+FbeArb/BooleanAlgebra_Properties.v
+
+FqExt/Fsub_LetSum_Definitions.v
+FqExt/Fsub_LetSum_Infrastructure.v
+FqExt/Fsub_LetSum_Lemmas.v
+FqExt/Fsub_LetSum_Soundness.v
+
+Fac/Fsub_LetSum_Definitions.v
+Fac/Fsub_LetSum_Infrastructure.v
+Fac/Fsub_LetSum_Lemmas.v
+Fac/Fsub_LetSum_Soundness.v
+
+Fa/Fsub_LetSum_Definitions.v
+Fa/Fsub_LetSum_Infrastructure.v
+Fa/Fsub_LetSum_Lemmas.v
+Fa/Fsub_LetSum_Soundness.v
+
+Lm/Lm_Definitions.v
+Lm/Lm_Infrastructure.v
+Lm/Lm_Lemmas.v
+Lm/Lm_Immutability.v
+Lm/Lm_MultistepImmutability.v
+
+Fam/Fm_Definitions.v
+Fam/Fm_Infrastructure.v
+Fam/Fm_Lemmas.v
+Fam/Fm_NormalForms.v
+Fam/Fm_Soundness.v
+Fam/Fm_Immutability.v
+Fam/Fm_MultistepImmutability.v
